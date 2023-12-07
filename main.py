@@ -35,3 +35,18 @@ def train_perceptron(x, y, learning_rate=0.01, epochs=50, delta=0.01):
             break
 
     return a, b
+
+def generate_plot(x, y, a, b):
+    plt.scatter(x, y, label='Generated points')
+    plt.plot(x, a * x + b, color='red', label=f'Approximation: y = {a:.2f}x + {b:.2f}')
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.legend()
+    plt.show()
+
+def main():
+    x, y = generate_points(30)
+    a, b = train_perceptron(x, y)
+    generate_plot(x, y, a, b)
+
+main()
