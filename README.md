@@ -23,3 +23,9 @@ pip install numpy
 1. Clone the repository.
 2. Install dependencies.
 3. Run the script (python main.py) to see the perceptron in action.
+
+## Screenshots
+![Example 1](example/example_1.png)
+
+![Example 2](example/example_2.png)
+
